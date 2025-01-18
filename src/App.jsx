@@ -1,19 +1,35 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import Home from './components/Home'
 import Footer from './components/Footer'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './components/Home'
+import Login from './components/Login'
+import Register from './components/Register'
+
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
+  const [activeComponent, setActiveComponent] =useState('home')
+  const loadComponent = () =>{
+    switch(activeComponent){
+      case 'home':
+        return <Home/>
+      case 'login':
+        return <Login/>
+      case 'register':
+        return <Register/>
+    }
+  }
 
   return (
     <div>
-      <Navbar />
-      <Home />
+      <Navbar setActiveComponent = {setActiveComponent}/>
+      {/* <Home /> */}
+      <main>
+        {loadComponent()}
+      </main>
       <Footer />
     </div>
   )
