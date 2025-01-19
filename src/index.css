@@ -1,24 +1,39 @@
-#root{
+#root {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /* Navbar */
 .navbar {
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0%;
+    border-bottom: solid;
 }
+
 .navbar button {
     margin-right: 20px;
-    border: none;   
+    border: none;
     width: 100px;
-    height: 100px;
+    height: 75px;
     background-color: white;
-
 }
+
+.navbar button:hover {
+    background-color: lightgray;
+}
+
+.navbar button:active {
+    background-color: rgb(190, 190, 190);
+}
+
 .navbar h1 {
-
+    margin: 20px;
+    padding: 0%;
 }
+
+/* Fin Navbar */
 
 /* Main */
 main {
@@ -39,16 +54,20 @@ main {
     height: 300px;
 
 }
+
 .header h1 {
     font-size: 40px;
 }
+
 .header p {
     font-size: 20px;
 }
+
 .header hr {
     width: 80%;
     border: solid 1px white;
 }
+
 /* Fin Header*/
 
 .container {
@@ -66,62 +85,71 @@ main {
     border: solid 1px gray;
     border-radius: 10px;
 }
+
 .cardPizza img {
     width: 100%;
     border-radius: 10px;
 }
+
 .cardPizza h1 {
     font-size: 1.4rem;
-    margin: 10px;    
+    margin: 10px;
 }
+
 .cardPizza h2 {
     font-size: 1.2rem;
     margin: 10px;
 }
+
 .cardPizza p {
     font-size: 0.8rem;
 }
+
 .cardPizza hr {
     width: 90%;
     margin: 0;
     justify-self: center;
 }
+
 .ingredientes {
     height: 100px;
 }
-.ingredientes h2{
+
+.ingredientes h2 {
     font-weight: 400;
     font-size: 1rem;
 }
+
 .botonHeader {
     margin: 10px;
     display: flex;
     justify-content: space-between;
 }
+
 /* Fin CardPizza*/
 /* Fin Home */
 
 .footer {
-    padding: 10px ;
+    padding: 10px;
     margin-top: 10px;
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
 }
+
 .footer p {
     margin: 0;
 }
 
 /* Formulario */
 form {
-    background-color: darkgray;
-    width: 100%;
+    height: 100%;
     padding: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px
-
 }
